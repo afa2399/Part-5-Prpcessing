@@ -66,11 +66,11 @@ void setup() {
      
      rectMode(CORNER);
      strokeWeight(0);
-     fill(150);
+     fill(0);
      rect(400, 0, 200, height);  //edit area box 
      strokeWeight(1);
      rect(400, 0, 200, 70);  //Rotate 
-     fill(0);
+     fill(255);
      text("rotate", 440, 45);
      fill(150);
      rect(400, 71, 100, 70);  //Scale up
