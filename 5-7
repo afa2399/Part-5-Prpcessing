@@ -24,7 +24,7 @@ void setup() {
  void draw() {
      background(#FFF4A0);
      
-              if(mousePressed && mouseX > 400){ //buttons  
+              if(mousePressed && mouseX >= 400){ //buttons  
        if(mouseY > 213 && mouseY < 283){ // red tint 
            red = 255;
            green = 0;
@@ -55,12 +55,12 @@ void setup() {
          rotate = true; 
        }
        if(mouseY > 71 && mouseY < 141 && mouseX < 600){
-         imageX += .5;
-         imageY += .5;
+         imageX += .9;
+         imageY += .9;
        }
        if(mouseY > 71 && mouseY < 141 && mouseX > 500){
-         imageX -= .5;
-         imageY -= .5;
+         imageX -= .9;
+         imageY -= .9;
        }
       }
      
