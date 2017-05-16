@@ -49,18 +49,19 @@ void setup() {
            tintonoff = false;
            imageX = 200;
            imageY = 300;
+           rotation = 0;
        }
        if (mouseY > 0 && mouseY < 70 && rotate == false){
          rotation += 45;
          rotate = true; 
        }
-       if(mouseY > 71 && mouseY < 141 && mouseX < 600){
-         imageX += .9;
-         imageY += .9;
-       }
+       
        if(mouseY > 71 && mouseY < 141 && mouseX > 500){
-         imageX -= .9;
-         imageY -= .9;
+         imageX -= .5;
+         imageY -= .5;
+       }else if(mouseY > 71 && mouseY < 141 && mouseX < 600){
+         imageX += .5;
+         imageY += .5;
        }
       }
      
